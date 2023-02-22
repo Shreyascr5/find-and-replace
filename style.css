@@ -1,0 +1,39 @@
+* {
+    text-align: center;
+    background-color: black;
+}
+
+h1 {
+    color: silver;
+}
+
+p {
+    color: aqua;
+}
+
+textarea {
+    color: chartreuse;
+    padding: 3rem;
+    border-radius: 1rem;
+    border-color: silver;
+}
+
+#find {
+    margin: 1rem;
+}
+
+#replace {
+    margin: 1rem;
+}
+
+#paragraph {
+    margin: 3rem;
+}
+
+#go {
+    border-color: silver;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    color: aqua;
+}
