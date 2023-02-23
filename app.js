@@ -1,19 +1,22 @@
-var getfind = document.getElementById("find");
-var getreplace = document.getElementById("replace");
-var getPara = document.querySelector("#paragraph");
-var butt = document.getElementById("go");
+var data = document.querySelector("#paragraph");
+var findel = document.querySelector("#find");
+var repword = document.querySelector("#replace");
+var butt = document.querySelector("#go");
+let find;
+let rep;
+let par;
+let check;
 
-function dofindreplace() {
-    let p = getPara.value;
-    let find = getfind.value;
-    let rep = getreplace.value;
-    console.log(find);
-    console.log(rep);
-    console.log(p);
-    // getPara.value = p.value.replace(find, rep);
-    while (find) {
-
-    }
+function findandreplace() {
+    par = data.value;
+    find = findel.value;
+    rep = repword.value;
+    // console.log(par);
+    // console.log(find);
+    // console.log(rep);
+    check = par.replace(find, rep);
+    data.value = check;
 }
 
-butt.addEventListener("click", dofindreplace);
+
+butt.addEventListener("click", findandreplace);
